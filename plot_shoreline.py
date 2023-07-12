@@ -1,3 +1,8 @@
+''' 
+Author: Autumn Nguyen
+Version: July 2023
+'''
+
 import geopandas as gpd
 from shapely.geometry import MultiPolygon, Polygon
 
