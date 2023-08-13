@@ -6,7 +6,7 @@ This repository contains the code for the research project ***Summer Fog Frequen
 Fog can offer protection for intertidal organisms around Washington coast during hot low tide times, which is especially important when more extreme heatwaves are likely to happen due to global warming. Using the Cloud Top Height imagery from NASA and NOAA’s satellite GOES-17, we created fog and low clouds (**FLC**) frequency maps and FLC timeseries for the summer months (May through September) of 2022 in Washington coastal areas. We also deployed cameras to take pictures of areas on San Juan Island and used a Computer Vision model to classify the pictures as having fog or not having fog. Our main research goals were: 
 1. Finding the frequency patterns of FLC in the summer around the Washington coast using GOES-17 Cloud Top Height data  
 2. Comparing the cloud top height data with the field cameras’ photos and the sensor’s temperature and humidity data, to see how we can best interpret the cloud top height data  
-3. Quantifying the impact of FLC on intertidal organisms in Washington in terms of FLC-protected hours during midday low tide and of the temperature difference when there is FLC and when there is not
+3. Quantifying the impact of FLC on intertidal organisms in Washington by the number of FLC-protected hours during midday low tide
 
 ## Which code does which purposes
 
@@ -20,6 +20,13 @@ Fog can offer protection for intertidal organisms around Washington coast during
 
 - We calculated FLC frequency and ploted Cloud Top Height time series of individual pixels in [goes/goes_analyze_timeseries.ipynb](goes/goes_analyze_timeseries.ipynb)
 
-- We compared satellite-detected cloud height and camera-derived fog presence in 
+- We classified field photos using a Machine Learning model in (img_classification.ipynb)[img_classification.ipynb]
+
+- We compared satellite-detected cloud height and camera-derived fog presence in [compare-goes-vs-photos.ipynb](compare-goes-vs-photos.ipynb)
+
+<img src="https://drive.google.com/uc?export=view&id=1kQ2swG9nwjpIcr7LRRE2pXoivcNNrimS" style="width:500px">
+
+- We calculated the number of hours that intertidal organisms had protection from FLC during midday low tide in [tide-vs-cloudheight.ipynb](tide-vs-cloudheight.ipynb)
+
 
 
