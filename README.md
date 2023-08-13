@@ -2,6 +2,8 @@
 
 This repository contains the code for the research project ***Summer Fog Frequency Patterns and Impact on Intertidal Organisms around Washington Coast from GOES-17 Satellite Imagery, Field Photos, and Field Sensors*** by Autumn Nguyễn, Jessica Lundquist, Steven Pestana, and Eli Schwat (2023).
 
+<img src="https://drive.google.com/uc?export=view&id=1-kkUkIVnFT0kWfjuF7QpftC-sU8bkgQB" style="height:500px"> <t> <img alt="Screen Shot 2023-08-13 at 3 37 32 PM" src="https://github.com/autumn-yng/summerfog/assets/92401509/b0c9c6ae-2682-45fd-bc17-8247722ef8a4" style="height:300px">
+
 ## Research summary
 Fog can offer protection for intertidal organisms around Washington coast during hot low tide times, which is especially important when more extreme heatwaves are likely to happen due to global warming. Using the Cloud Top Height imagery from NASA and NOAA’s satellite GOES-17, we created fog and low clouds (**FLC**) frequency maps and FLC timeseries for the summer months (May through September) of 2022 in Washington coastal areas. We also deployed cameras to take pictures of areas on San Juan Island and used a Computer Vision model to classify the pictures as having fog or not having fog. Our main research goals were: 
 1. Finding the frequency patterns of FLC in the summer around the Washington coast using GOES-17 Cloud Top Height data  
@@ -10,25 +12,25 @@ Fog can offer protection for intertidal organisms around Washington coast during
 
 ## Which code does which purposes
 ### Main code:
-- We loaded, stacked, and chunked all the raster files, and saved them in a zarr format in [goes/goes_create_zarr.ipynb](goes/goes_create_zarr.ipynb).
+- We loaded, stacked, and **chunked** all the raster files, and saved them in a **zarr** format in [goes/goes_create_zarr.ipynb](goes/goes_create_zarr.ipynb).
 
 <img src="https://drive.google.com/uc?export=view&id=1KFBGF-bETGhJ0mJPusuQaZZHko4KfrG-" style="width:500px">
 
-- We created frequency maps in [goes/goes_frequency.ipynb](goes/goes_frequency.ipynb)
+- We created **frequency maps** in [goes/goes_frequency.ipynb](goes/goes_frequency.ipynb)
 
-<img src="https://drive.google.com/uc?export=view&id=1-kkUkIVnFT0kWfjuF7QpftC-sU8bkgQB" style="width:500px">
+<img src="https://drive.google.com/uc?export=view&id=1VvqlYuMHauPtT2kBeeiZwnIs8Hg64249">
 
-- We calculated FLC frequency and ploted Cloud Top Height time series of individual pixels in [goes/goes_analyze_timeseries.ipynb](goes/goes_analyze_timeseries.ipynb)
+- We calculated FLC frequency and ploted Cloud Top Height **time series of individual pixels** in [goes/goes_analyze_timeseries.ipynb](goes/goes_analyze_timeseries.ipynb)
 
-- We classified field photos using a Machine Learning model in [img_classification.ipynb](img_classification.ipynb)
+- We **classified** field photos using a **Machine Learning** model in [img_classification.ipynb](img_classification.ipynb)
 
-- We compared satellite-detected cloud height and camera-derived fog presence in [compare-goes-vs-photos.ipynb](compare-goes-vs-photos.ipynb)
+- We **compared** satellite-detected cloud height and camera-derived fog presence in [compare-goes-vs-photos.ipynb](compare-goes-vs-photos.ipynb)
 
-<img src="https://drive.google.com/uc?export=view&id=1kQ2swG9nwjpIcr7LRRE2pXoivcNNrimS" style="width:500px">
+<img src="https://drive.google.com/uc?export=view&id=1kQ2swG9nwjpIcr7LRRE2pXoivcNNrimS">
 
-- We calculated the number of hours that intertidal organisms had protection from FLC during midday low tide in [tide-vs-cloudheight.ipynb](tide-vs-cloudheight.ipynb)
+- We calculated the number of hours that intertidal organisms had protection from FLC during **midday low tide** in [tide-vs-cloudheight.ipynb](tide-vs-cloudheight.ipynb)
 
-<img src="https://drive.google.com/uc?export=view&id=16mCcI0uQ0Zq2HKVHmHWm5Eap6BsKFcLd" style="width:500px">
+<img src="https://drive.google.com/uc?export=view&id=16mCcI0uQ0Zq2HKVHmHWm5Eap6BsKFcLd">
 
 ### Supplemental code:
 - Our guide for downloading raster files from GOES-17: [archived/getting-started.ipynb](archived/getting-started.ipynb)
