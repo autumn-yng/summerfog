@@ -9,7 +9,7 @@ Fog can offer protection for intertidal organisms around Washington coast during
 3. Quantifying the impact of FLC on intertidal organisms in Washington by the number of FLC-protected hours during midday low tide
 
 ## Which code does which purposes
-
+### Main code:
 - We loaded, stacked, and chunked all the raster files, and saved them in a zarr format in [goes/goes_create_zarr.ipynb](goes/goes_create_zarr.ipynb).
 
 <img src="https://drive.google.com/uc?export=view&id=1KFBGF-bETGhJ0mJPusuQaZZHko4KfrG-" style="width:500px">
@@ -20,7 +20,7 @@ Fog can offer protection for intertidal organisms around Washington coast during
 
 - We calculated FLC frequency and ploted Cloud Top Height time series of individual pixels in [goes/goes_analyze_timeseries.ipynb](goes/goes_analyze_timeseries.ipynb)
 
-- We classified field photos using a Machine Learning model in (img_classification.ipynb)[img_classification.ipynb]
+- We classified field photos using a Machine Learning model in [img_classification.ipynb](img_classification.ipynb)
 
 - We compared satellite-detected cloud height and camera-derived fog presence in [compare-goes-vs-photos.ipynb](compare-goes-vs-photos.ipynb)
 
@@ -28,5 +28,14 @@ Fog can offer protection for intertidal organisms around Washington coast during
 
 - We calculated the number of hours that intertidal organisms had protection from FLC during midday low tide in [tide-vs-cloudheight.ipynb](tide-vs-cloudheight.ipynb)
 
+<img src="https://drive.google.com/uc?export=view&id=16mCcI0uQ0Zq2HKVHmHWm5Eap6BsKFcLd" style="width:500px">
+
+### Supplemental code:
+- Our guide for downloading raster files from GOES-17: [archived/getting-started.ipynb](archived/getting-started.ipynb)
+
+- Our code for plotting the shoreline in the frequency maps: [plot_shoreline.py](plot_shoreline.py)
+
+- The environment we coded in: [environment.yml](environment.yml).
+We created the environment in Terminal using `conda env create -f environment.yml`.
 
 
