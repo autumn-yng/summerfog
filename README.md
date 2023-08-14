@@ -35,6 +35,8 @@ Fog can offer protection for intertidal organisms around Washington coast during
 ### Supplemental code:
 - Our guide for downloading raster files from GOES-17: [archived/getting-started.ipynb](archived/getting-started.ipynb)
 
+- Where we added time index and remove unnecessary coordinates and dimensions in the raster files to reduce size (disk usage): [goes/goes_add_time_and_clean.ipynb](goes/goes_add_time_and_clean.ipynb)
+
 - Our code for plotting the shoreline in the frequency maps: [plot_shoreline.py](plot_shoreline.py)
 
 - The environment we coded in: [environment.yml](environment.yml).
