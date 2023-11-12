@@ -1,6 +1,6 @@
 # Summer Coastal Fog in Washington through GOES-17 satellite data and field photos
 
-This repository contains the code for the research project ***Summer Fog Frequency Patterns and Impact on Intertidal Organisms around Washington Coast from GOES-17 Satellite Imagery, Field Photos, and Field Sensors*** by Autumn Nguyễn, Jessica Lundquist, Steven Pestana, and Eli Schwat (2023).
+This repository contains the code for the research paper ***Summer Fog Frequency Patterns and Impact on Intertidal Organisms around Washington Coast from GOES-17 Satellite Imagery, Field Photos, and Field Sensors*** (under review) by Autumn Nguyễn, Jessica Lundquist, Steven Pestana, and Eli Schwat (2023).
 
 <img src="https://drive.google.com/uc?export=view&id=1-kkUkIVnFT0kWfjuF7QpftC-sU8bkgQB" style="height:500px"> <t> <img alt="Screen Shot 2023-08-13 at 3 37 32 PM" src="https://github.com/autumn-yng/summerfog/assets/92401509/b0c9c6ae-2682-45fd-bc17-8247722ef8a4" style="height:300px">
 
