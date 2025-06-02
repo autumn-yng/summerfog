@@ -1,6 +1,7 @@
 from src.data import load_dataset, scale_dataset,split_dataset
 from src.model.model import build_model, compile_model
 from src.models.callbacks import get_callbacks
+import tensorflow as tf
 
 def main():
 	orig_ds = load_dataset("data", ["no_cloud", "cloud"], 
@@ -10,6 +11,8 @@ def main():
 							shuffle=True)
 	scaled_ds = scale_dataset(orig_ds)
 	train_ds, val_ds, test_ds = split_dataset(scaled_ds)
+    # Save test set to disk to use in evaluate.py
+	tf.data.experimental.save(test_ds, 'data/test_data')
 
 	model = build_model(
 		input_shape=(256, 256, 3),
